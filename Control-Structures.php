@@ -36,27 +36,27 @@ foreach ($books as $book => $cost) {
 
 echo "Total cost: shs. " . $total . "\n";
 
+// STUDENTS MARKS
 
-// STUDENSTS MARKS
-
-$students=[
-"kasasa"=>70,
-"Trevor"=>80,
-"James"=>60,
-"Opio"=>40
-
+$students = [
+    "Kasasa" => 70,
+    "Trevor" => 80,
+    "James" => 60,
+    "Opio" => 40
 ];
-$total = 0 ."\n";
 
-foreach($students as $name => $marks){
-    echo $name.": ".$marks."\n";
-    $total += $marks;
+$totalMarks = 0;
+
+foreach ($students as $name => $marks) {
+    echo $name . ": " . $marks . "\n";
+    $totalMarks += $marks;
 }
-echo "Total marks: ". $total . "";
 
-//WHILE LOOP
+echo "Total marks: " . $totalMarks . "\n";
 
-$emails=[
+// WHILE LOOP
+
+$emails = [
     'kasasa@gmail.com',
     'trevor@gmail.com',
     'james@gmail.com',
@@ -64,9 +64,42 @@ $emails=[
 ];
 
 $counter = 0;
-$amount = 3;
+$amount = count($emails) - 1; // Adjusted amount to match the index range
 
-while($counter <= $amount){
-    echo "Processing email: ". $emails[$counter]. "\n";
+while ($counter <= $amount) {
+    echo "Processing email: " . $emails[$counter] . "\n";
     $counter++;
+}
+
+// FOR LOOP
+
+$books = [
+    'Java',
+    'PHP',
+    'C++',
+    'Python',
+    'C#'
+];
+
+for ($i = 0; $i < count($books); $i++) {
+    echo "Processing book: " . $books[$i] . "\n";
+}
+
+//SWITCH STATEMENT
+
+$status = "Paid";
+
+switch ($status) {
+    case "Pending":
+        echo "Process payment\n";
+        break;
+    case "Paid":
+        echo "Process delivery\n";
+        break;
+    case "Delivered":
+    echo "Process receipt\n";
+    break;
+    default:
+        echo "Invalid status\n";        
+        break;
 }
