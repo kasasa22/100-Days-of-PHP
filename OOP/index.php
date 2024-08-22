@@ -9,7 +9,10 @@
     <?php
    require_once 'classes/car.php';
    $car12 = new Car("Ipsum", "bluet");
-   echo $car12->getCarInfo();
+   $car12->setBrand("Lorem");
+   echo $car12->getBrand();
+   echo $car12->setColor("black");
+   echo $car12->getColor()
     ?>
 </body>
 </html>

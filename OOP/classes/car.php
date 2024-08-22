@@ -20,6 +20,14 @@ class Car{
     $this->brand = $brand;
   }
 
+  public function getColor(){
+    return $this->color;
+  }
+
+  public function setColor($color){
+    $this->color = $color;
+  }
+
   //METHODS
   public function getCarInfo(){
     return "This is a $this->color $this->brand $this->vehicle_type.";
