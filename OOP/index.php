@@ -7,8 +7,9 @@
 </head>
 <body>
     <?php
-    $brand = 'volvo';
-    $color ='greee';
+   require_once 'classes/car.php';
+   $car12 = new Car("Ipsum", "bluet");
+   echo $car12->getCarInfo();
     ?>
 </body>
 </html>
