@@ -25,7 +25,15 @@ class Car{
   }
 
   public function setColor($color){
-    $this->color = $color;
+    $colors=[
+      "red" => "Red",
+      "blue" => "Blue",
+      "green" => "Green"
+    ];
+    if(isset($colors[$color])){
+      $this->color = $color;
+    }
+  
   }
 
   //METHODS

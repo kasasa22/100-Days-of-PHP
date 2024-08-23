@@ -6,13 +6,16 @@
     <title>OOP php</title>
 </head>
 <body>
+
+<form action="post">
+    <label for="username">Name:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Submit">
+</form>
     <?php
-   require_once 'classes/car.php';
-   $car12 = new Car("Ipsum", "bluet");
-   $car12->setBrand("Lorem");
-   echo $car12->getBrand();
-   echo $car12->setColor("black");
-   echo $car12->getColor()
+  
     ?>
 </body>
 </html>
